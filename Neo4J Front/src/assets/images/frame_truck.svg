@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="994px" height="336px" viewBox="0 0 994 336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group 48</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.926365679 0.155424 32.6067579 0.155424 32.6067579 21.4704028 0.926365679 21.4704028"></polygon>
+        <polygon id="path-3" points="0.926365679 0.398410818 32.6067579 0.398410818 32.6067579 21.7133896 0.926365679 21.7133896"></polygon>
+        <polygon id="path-5" points="0.926365679 0.641397635 32.6067579 0.641397635 32.6067579 21.9563764 0.926365679 21.9563764"></polygon>
+        <polygon id="path-7" points="0.926365679 0.884384453 32.6067579 0.884384453 32.6067579 22.1993632 0.926365679 22.1993632"></polygon>
+        <polygon id="path-9" points="0.926365679 0.0347890991 32.6067579 0.0347890991 32.6067579 21.3497679 0.926365679 21.3497679"></polygon>
+        <polygon id="path-11" points="0.926365679 0.203362355 32.6067579 0.203362355 32.6067579 21.5183411 0.926365679 21.5183411"></polygon>
+        <polygon id="path-13" points="0.926365679 0.448538243 32.6067579 0.448538243 32.6067579 21.763517 0.926365679 21.763517"></polygon>
+        <polygon id="path-15" points="0.926365679 0.69152506 32.6067579 0.69152506 32.6067579 22.0065038 0.926365679 22.0065038"></polygon>
+        <polygon id="path-17" points="0.926365679 0.934511878 32.6067579 0.934511878 32.6067579 22.2494906 0.926365679 22.2494906"></polygon>
+        <polygon id="path-19" points="0.926365679 0.157613071 32.6067579 0.157613071 32.6067579 21.4704028 0.926365679 21.4704028"></polygon>
+    </defs>
+    <g id="Page-1_final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Earth-2D-route-problem-033" transform="translate(-225.000000, -346.000000)">
+            <g id="Group-25" transform="translate(720.000000, 511.500000) rotate(-90.000000) translate(-720.000000, -511.500000) translate(313.000000, -49.000000)">
+                <g id="Group-31-Copy" transform="translate(0.000000, 0.200000)">
+                    <g id="Group-7" transform="translate(0.000000, 0.180600)">
+                        <g id="Group-48" transform="translate(404.000000, 562.619400) rotate(90.000000) translate(-404.000000, -562.619400) translate(-93.000000, 394.619400)">
+                            <path d="M23,335 L936,335 L936,18 L23,18 L23,335 Z M25.1810671,332.810834 L933.818933,332.810834 L933.818933,20.189166 L25.1810671,20.189166 L25.1810671,332.810834 Z" id="Fill-1" fill="#4DFFFF"></path>
+                            <polygon id="Fill-2" fill="#4DFFFF" points="1.54613919e-11 9 1.54613919e-11 229 2.18238053 229 2.18238053 11.1850759 942.815437 11.1850759 942.815437 123.806075 933.730187 132.904731 935.27313 134.449579 945 124.710696 945 9"></polygon>
+                            <g id="Group-10" transform="translate(0.000000, -0.000000)" fill="#4DFFFF">
+                                <polygon id="Fill-3" points="935.051601 210.065582 925.622298 219.504699 925.622298 333.906105 935.051601 333.906105"></polygon>
+                                <polygon id="Fill-5" points="23.4358652 286.633699 14.0065618 296.072817 14.0065618 334.904353 23.4358652 334.904353"></polygon>
+                                <g id="Group-9" transform="translate(0.000000, -0.000000)">
+                                    <polygon id="Fill-7" points="331.84957 9.59523203 322.420267 0.156114379 0.00393707865 0.156114379 0.00393707865 9.59523203"></polygon>
+                                </g>
+                            </g>
+                            <polygon id="Fill-11" fill="#4DFFFF" points="917 49 914.854431 49 914.854431 38.1455686 904 38.1455686 904 36 917 36"></polygon>
+                            <polygon id="Fill-12" fill="#4DFFFF" points="917 315 904 315 904 312.854431 914.854431 312.854431 914.854431 302 917 302"></polygon>
+                            <polygon id="Fill-13" fill="#4DFFFF" points="53 315 40 315 40 302 42.1459227 302 42.1459227 312.854431 53 312.854431"></polygon>
+                            <polygon id="Fill-14" fill="#4DFFFF" points="42.1459227 49 40 49 40 36 53 36 53 38.1455686 42.1459227 38.1455686"></polygon>
+                            <g id="Group-47" transform="translate(52.000000, -0.000000)">
+                                <g id="Group-19" transform="translate(908.150153, 313.037071)">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Clip-18"></g>
+                                    <polygon id="Fill-17" fill="#00CFCF" mask="url(#mask-2)" points="0.926365679 21.4704028 32.6089479 21.4704028 32.6089479 0.155424 0.926365679 0.155424"></polygon>
+                                </g>
+                                <g id="Group-22" transform="translate(908.150153, 278.011944)">
+                                    <mask id="mask-4" fill="white">
+                                        <use xlink:href="#path-3"></use>
+                                    </mask>
+                                    <g id="Clip-21"></g>
+                                    <polygon id="Fill-20" fill="#00CFCF" mask="url(#mask-4)" points="0.926365679 21.7133896 32.6089479 21.7133896 32.6089479 0.398410818 0.926365679 0.398410818"></polygon>
+                                </g>
+                                <g id="Group-25" transform="translate(908.150153, 242.986818)">
+                                    <mask id="mask-6" fill="white">
+                                        <use xlink:href="#path-5"></use>
+                                    </mask>
+                                    <g id="Clip-24"></g>
+                                    <polygon id="Fill-23" fill="#00CFCF" mask="url(#mask-6)" points="0.926365679 21.9563764 32.6089479 21.9563764 32.6089479 0.641397635 0.926365679 0.641397635"></polygon>
+                                </g>
+                                <g id="Group-28" transform="translate(908.150153, 207.961691)">
+                                    <mask id="mask-8" fill="white">
+                                        <use xlink:href="#path-7"></use>
+                                    </mask>
+                                    <g id="Clip-27"></g>
+                                    <polygon id="Fill-26" fill="#00CFCF" mask="url(#mask-8)" points="0.926365679 22.1993632 32.6089479 22.1993632 32.6089479 0.884384453 0.926365679 0.884384453"></polygon>
+                                </g>
+                                <g id="Group-31" transform="translate(908.150153, 174.031335)">
+                                    <mask id="mask-10" fill="white">
+                                        <use xlink:href="#path-9"></use>
+                                    </mask>
+                                    <g id="Clip-30"></g>
+                                    <polygon id="Fill-29" fill="#00CFCF" mask="url(#mask-10)" points="0.926365679 21.3497679 32.6089479 21.3497679 32.6089479 0.0347890991 0.926365679 0.0347890991"></polygon>
+                                </g>
+                                <g id="Group-34" transform="translate(908.150153, 139.078433)">
+                                    <mask id="mask-12" fill="white">
+                                        <use xlink:href="#path-11"></use>
+                                    </mask>
+                                    <g id="Clip-33"></g>
+                                    <polygon id="Fill-32" fill="#00CFCF" mask="url(#mask-12)" points="0.926365679 21.5183411 32.6089479 21.5183411 32.6089479 0.203362355 0.926365679 0.203362355"></polygon>
+                                </g>
+                                <g id="Group-37" transform="translate(908.150153, 104.053306)">
+                                    <mask id="mask-14" fill="white">
+                                        <use xlink:href="#path-13"></use>
+                                    </mask>
+                                    <g id="Clip-36"></g>
+                                    <polygon id="Fill-35" fill="#00CFCF" mask="url(#mask-14)" points="0.926365679 21.763517 32.6089479 21.763517 32.6089479 0.448538243 0.926365679 0.448538243"></polygon>
+                                </g>
+                                <g id="Group-40" transform="translate(908.150153, 69.028179)">
+                                    <mask id="mask-16" fill="white">
+                                        <use xlink:href="#path-15"></use>
+                                    </mask>
+                                    <g id="Clip-39"></g>
+                                    <polygon id="Fill-38" fill="#00CFCF" mask="url(#mask-16)" points="0.926365679 22.0065038 32.6089479 22.0065038 32.6089479 0.69152506 0.926365679 0.69152506"></polygon>
+                                </g>
+                                <g id="Group-43" transform="translate(908.150153, 34.003052)">
+                                    <mask id="mask-18" fill="white">
+                                        <use xlink:href="#path-17"></use>
+                                    </mask>
+                                    <g id="Clip-42"></g>
+                                    <polygon id="Fill-41" fill="#00CFCF" mask="url(#mask-18)" points="0.926365679 22.2494906 32.6089479 22.2494906 32.6089479 0.934511878 0.926365679 0.934511878"></polygon>
+                                </g>
+                                <g id="Group-46" transform="translate(908.150153, -0.000000)">
+                                    <mask id="mask-20" fill="white">
+                                        <use xlink:href="#path-19"></use>
+                                    </mask>
+                                    <g id="Clip-45"></g>
+                                    <polygon id="Fill-44" fill="#00CFCF" mask="url(#mask-20)" points="0.926365679 21.4704028 32.6089479 21.4704028 32.6089479 0.155424 0.926365679 0.155424"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

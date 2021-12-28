@@ -1,0 +1,132 @@
+@import "../../../vars";
+
+.map2d {
+  height: calc(100vh - 165px);
+  position: relative;
+  &.showed-spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.hidden-map {
+  display: none;
+}
+
+$inactive: #aaa;
+$active: $problemColor;
+$speed: 1.2s;
+$size: 50px;
+$unit: $size / 16;
+
+%spinner {
+  display: block;
+  float: left;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  border: $unit solid $inactive;
+  animation: spinner $speed linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Sections */
+%spinner-double-section,
+.spinner-double-section {
+  @extend %spinner;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    top: -$unit;
+    left: -$unit;
+    display: block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    border: $unit solid transparent;
+    border-top-color: $active;
+  }
+  &:after {
+    border-top-color: transparent;
+    border-bottom-color: $active;
+  }
+}
+
+%spinner-double-section-in,
+.spinner-double-section-in {
+  @extend %spinner-double-section;
+
+  &:before,
+  &:after {
+    top: 0;
+    left: 0;
+    width: ($size - $unit * 2);
+    height: ($size - $unit * 2);
+  }
+}
+
+%spinner-double-section-out,
+.spinner-double-section-out {
+  @extend %spinner-double-section;
+
+  &:before,
+  &:after {
+    top: ($unit * -2);
+    left: ($unit * -2);
+    width: ($size + $unit * 2);
+    height: ($size + $unit * 2);
+  }
+}
+
+%spinner-double-section-far,
+.spinner-double-section-far {
+  @extend %spinner-double-section;
+
+  &:before,
+  &:after {
+    top: ($unit * -3);
+    left: ($unit * -3);
+    width: ($size + $unit * 4);
+    height: ($size + $unit * 4);
+  }
+}
+
+.hideCards {
+  display: none;
+}
+
+@media screen and(max-width: 1024px) {
+  .reduceMap {
+    min-height: 60vh;
+    max-height: calc(100vh - 293px) !important;
+  }
+  .hideModal {
+    display: none;
+  }
+}
+
+@media screen  and (max-width: 800px) {
+  .map2d {
+    height: calc(100vh - 130px);
+  }
+  .reduceMap {
+    max-height: calc(100vh - 261px) !important;
+  }
+}
+
+@media screen  and (max-width: 450px) {
+  .map2d {
+    height: calc(100vh - 120px);
+  }
+}

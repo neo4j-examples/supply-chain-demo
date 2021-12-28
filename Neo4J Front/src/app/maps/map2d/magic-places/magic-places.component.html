@@ -1,0 +1,12 @@
+<form [formGroup]="magicPlaceForm" (ngSubmit)="sendMagicPlaceParams()">
+  <label
+    [ngClass]="{ active: magicPlaceForm.controls[item.id].value }"
+    *ngFor="let item of itemsMagicPlaces"
+  >
+    <input type="checkbox" [formControlName]="item.id" class="checkbox-round" />
+    {{ item.description }}
+  </label>
+  <!-- <div class="call-action">
+    <button type="submit">SUGGEST ME</button>
+  </div> -->
+</form>

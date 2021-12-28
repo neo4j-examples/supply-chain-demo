@@ -1,0 +1,4 @@
+{
+  "/neo4j/listcentersandrelations*": "/data",
+  "/neo4j/distributioncenterdetails\\?idDistributionCenter=:id": "/details/:id"
+}

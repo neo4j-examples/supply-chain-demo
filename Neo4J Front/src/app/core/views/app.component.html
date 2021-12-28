@@ -1,0 +1,10 @@
+<neo4j-header></neo4j-header>
+
+<div class="toggle-view">
+  <a [routerLink]="['/']" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" >3D</a>
+  <a [routerLink]="['/2d']" routerLinkActive="active" >2D</a>
+</div>
+
+<router-outlet></router-outlet>
+
+<neo4j-footer></neo4j-footer>

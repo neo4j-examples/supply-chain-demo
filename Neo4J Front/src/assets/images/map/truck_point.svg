@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="111px" viewBox="0 0 111 111" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>F210A57C-53B7-46E8-B08B-84ADDDAE24A2</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Page-1_final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1-Earth-2D-zoom-california-details-hover" transform="translate(-312.000000, -760.000000)">
+            <g id="Group-20" transform="translate(-57.000000, -380.000000)">
+                <g id="Group-15" transform="translate(287.000000, 559.000000)">
+                    <g id="point-copy-5" transform="translate(82.000000, 581.000000)">
+                        <g id="Group-14-Copy-12" fill="#00CECE" fill-rule="nonzero">
+                            <circle id="Oval" opacity="0.2" cx="55.29384" cy="55.29384" r="55.29384"></circle>
+                            <circle id="Oval" opacity="0.4" cx="55.29384" cy="55.29384" r="44.81568"></circle>
+                            <circle id="Oval" opacity="0.6" cx="55.29384" cy="55.29384" r="34.3224"></circle>
+                            <circle id="Oval" opacity="0.8" transform="translate(55.278430, 55.298735) rotate(-76.720000) translate(-55.278430, -55.298735) " cx="55.2784301" cy="55.298735" r="23.84424"></circle>
+                            <circle id="Oval" cx="55.29384" cy="55.29384" r="13.36608"></circle>
+                        </g>
+                        <g id="Group-49" transform="translate(42.000000, 47.000000)" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2">
+                            <polyline id="Stroke-1" points="1.890432 8.64384 1.890432 11.49888 2.909952 11.49888 2.909952 14.33952 4.944192 14.33952"></polyline>
+                            <path d="M1.92,2.76384 L1.92,-1.33226763e-14 L22.97184,-1.33226763e-14 L25.01376,4.66176 L27.17664,6.13248 C27.50496,6.35616 27.84,6.72768 27.84,7.12416 L27.84,14.39904 L25.31808,14.39904" id="Stroke-2"></path>
+                            <path d="M9.634656,14.414112 L20.626656,14.414112" id="Stroke-4"></path>
+                            <path d="M22.972032,16.68432 C24.265152,16.68432 25.317312,15.63216 25.317312,14.33904 C25.317312,13.04592 24.265152,11.99376 22.972032,11.99376 C21.678912,11.99376 20.626752,13.04592 20.626752,14.33904 C20.626752,15.63216 21.678912,16.68432 22.972032,16.68432 Z" id="Stroke-6"></path>
+                            <path d="M7.289088,16.68432 C8.582208,16.68432 9.634368,15.63216 9.634368,14.33904 C9.634368,13.04592 8.582208,11.99376 7.289088,11.99376 C5.995968,11.99376 4.943808,13.04592 4.943808,14.33904 C4.943808,15.63216 5.995968,16.68432 7.289088,16.68432 Z" id="Stroke-8"></path>
+                            <path d="M3.744384,6.72384 L0.990144,6.72384" id="Stroke-10"></path>
+                            <path d="M4.28546088e-14,4.815072 L4.77024,4.815072" id="Stroke-12"></path>
+                            <path d="M2.909952,11.493888 L27.825792,11.493888" id="Stroke-14"></path>
+                            <path d="M19.302624,9.6e-05 L19.302624,11.494176" id="Stroke-16"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

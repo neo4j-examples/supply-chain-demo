@@ -1,0 +1,75 @@
+<div class="backdrop"></div>
+
+<div class="main-container">
+  <div class="content-wrapper">
+    <div class="content">
+      <div class="header-modal">
+        <div class="info-back-wrapper">
+          <span class="tag-header hide">DETAILS</span>
+          <span class="problem-name">TRUCK PROBLEM</span>
+          <small class="id-truck">ID: {{ truckInfo.id }}</small>
+          <div class="back-wrapper" (click)="closeClicked()">
+            <div class="icon-back">
+              <img src="assets/images/left-arrow.svg" />
+            </div>
+            <small>GO BACK</small>
+          </div>
+        </div>
+        <div class="card-driver">
+          <div class="personal-info">
+            <div><img src="assets/images/driver.svg" /></div>
+            <div class="name">
+              <span class="problem-name">DRIVER: Karter Cleve</span>
+              <span class="id-truck">ID: 32144E75M</span>
+            </div>
+          </div>
+
+          <div class="call-action" style="margin-top: 0">
+            <button (click)="callDriver.emit()">CALL DRIVER</button>
+            <button>TEXT DRIVER</button>
+          </div>
+        </div>
+      </div>
+      <div class="truck">
+        <neo4j-truck [incident]="incident"></neo4j-truck>
+      </div>
+      <div class="details">
+        <div class="details-item information">
+          <span class="title">Information</span>
+          <span class="description">{{ incident.detailedDescription }}</span>
+        </div>
+        <div class="separator"></div>
+        <div class="details-item solutions">
+          <span class="title">Solutions</span>
+          <span class="description">{{ incident.solution }}</span>
+        </div>
+      </div>
+      <div class="charts hide">
+        <!-- <canvas height="130" #mockChartFirst></canvas>
+        <canvas height="130" #mockChartSecond></canvas> -->
+        <div class="charts-item">
+          <img src="assets/images/truck-hologram.webp" width="100%" />
+        </div>
+
+        <div class="charts-item">
+          <div
+            #chart
+            id="mph"
+            style="width: 100%; height: 350px; transform: translateY(-25%)"
+          ></div>
+        </div>
+
+        <div class="charts-item">
+          <div
+            #chartTwo
+            id="mpg"
+            style="width: 100%; height: 350px; transform: translateY(-25%)"
+          ></div>
+        </div>
+        <div class="charts-item">
+          <img src="assets/images/hud.jpg" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

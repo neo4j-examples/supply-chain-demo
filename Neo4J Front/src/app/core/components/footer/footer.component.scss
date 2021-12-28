@@ -1,0 +1,114 @@
+@import "../../../../vars";
+
+footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 65px;
+  top: -60px;
+  position: relative;
+  z-index: 499;
+  .border {
+    position: absolute;
+    transform: rotateX(180deg);
+    img{
+      width: 100%;
+      max-width: 1440px;
+    }
+  }
+  .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1;
+    .item {
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 2rem;
+      font-weight: 300;
+    }
+    .point {
+      border-radius: 50%;
+      min-height: 10px;
+      min-width: 10px;
+      max-height: 10px;
+      max-width: 10px;
+    }
+    .distribution-center {
+      color: $primaryColor;
+      .point {
+        background: $primaryColor;
+      }
+    }
+    .destination {
+      color: $destinationColor;
+      .point {
+        background: $destinationColor;
+      }
+    }
+    .problem-onroute {
+      color: $problemColor;
+      .point {
+        background: $problemColor;
+      }
+    }
+  }
+}
+
+@media screen  and (max-width: 1450px) {
+  footer {
+    top: -40px;
+  }
+  .border {
+    position: unset !important;
+  }
+  .item{
+    margin-top: 1rem !important;
+  }
+}
+
+@media screen  and (max-width: 1140px) {
+  footer {
+    top: -35px;
+  }
+}
+
+@media screen  and (max-width: 800px) {
+  footer {
+    top: -30px;
+  }
+}
+
+@media screen  and (max-width: 750px) {
+  .point {
+    display: none;
+  }
+}
+
+@media screen  and (max-width: 600px) {
+  footer {
+    top: -27px;
+  }
+}
+
+@media screen  and (max-width: 450px) {
+  footer {
+    top: -25px;
+  }
+  .item {
+    font-size: 12px !important;
+  }
+}
+
+@media screen  and (max-width: 363px) {
+  .border {
+    display: none;
+  }
+  .item {
+    font-size: 11px !important;
+  }
+}

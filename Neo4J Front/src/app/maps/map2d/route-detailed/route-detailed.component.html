@@ -1,0 +1,12 @@
+<div
+  #map
+  id="map"
+  [ngClass]="{ hidden: hiddenMap }"
+  leaflet
+  (leafletMapReady)="onMapReady($event)"
+  [leafletOptions]="mapOptions"
+></div>
+<div class="shadow"></div>
+<span [ngClass]="{ hidden: !hiddenMap }" class="calculating-route"
+  >Calculating route...</span
+>

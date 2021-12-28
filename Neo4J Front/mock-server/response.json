@@ -1,0 +1,759 @@
+{
+  "data": {
+    "distributionCenters": [
+      {
+        "description": "Madrid Distribution Center",
+        "city": "Madrid",
+        "position": [40.416775, -3.70379],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Londres Distribution Center",
+        "city": "London",
+        "position": [51.507351, 0.127758],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Stockholm Distribution Center",
+        "city": "Stockholm",
+        "position": [59.33279, 18.064489],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Istambul Distribution Center",
+        "city": "Istambul",
+        "position": [41.00824, 28.978359],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Moscow Distribution Center",
+        "city": "Moscow",
+        "position": [55.755871, 37.61768],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Abu Dhabi Distribution Center",
+        "city": "Abu Dhabi",
+        "position": [24.4519366588493, 54.3780168754372],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Kabul Distribution Center",
+        "city": "Kabul",
+        "position": [34.5647607289111, 69.2197289242998],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Beijing Distribution Center",
+        "city": "Beijing",
+        "position": [39.9074302904435, 116.402175832218],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Shanghai Distribution Center",
+        "city": "Shanghai",
+        "position": [31.2692897243138, 121.538705764063],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Hong Kong Distribution Center",
+        "city": "Hong Kong",
+        "position": [22.1002227971559, 114.199396547031],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Kuala Lumpur Distribution Center",
+        "city": "Kuala Lumpur",
+        "position": [3.15652434809759, 101.856943971796],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Sidney Distribution Center",
+        "city": "Sidney",
+        "position": [-33.803000912835, 151.234178985345],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Perth Distribution Center",
+        "city": "Perth",
+        "position": [-31.9391467557776, 114.199396547031],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Jartum Distribution Center",
+        "city": "Jartum",
+        "position": [15.5067918525679, 32.5652052203144],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Tripoli Distribution Center",
+        "city": "Tripoli",
+        "position": [32.9233992348513, 13.1692539522935],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Conakri Distribution Center",
+        "city": "Conakri",
+        "position": [9.6680344397612, -13.5981712072533],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Marrakech Distribution Center",
+        "city": "Marrakech",
+        "position": [31.650257233114, -7.99006886072168],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Nuuk Distribution Center",
+        "city": "Nuuk",
+        "position": [64.1825353746219, -51.6909195232906],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Anchorage Distribution Center",
+        "city": "Anchorage",
+        "position": [61.2334376777177, -149.877121900356],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Vancouver Distribution Center",
+        "city": "Vancouver",
+        "position": [49.273284823589, -123.075112001265],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "San Diego Distribution Center",
+        "city": "San Diego",
+        "position": [32.7183993039687, -117.173063005084],
+        "type": "DistributionCenter",
+        "hasProblem": true
+      },
+      {
+        "description": "Toronto Distribution Center",
+        "city": "Toronto",
+        "position": [43.6130694872751, -79.5100049337056],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "New York Distribution Center",
+        "city": "New York",
+        "position": [40.7592062728212, -73.9973908544038],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Atlanta Distribution Center",
+        "city": "Atlanta",
+        "position": [33.7686936361718, -84.3796101275601],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Miami Distribution Center",
+        "city": "Miami",
+        "position": [25.759913090043, -80.2408234198862],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Las Vegas Distribution Center",
+        "city": "Las Vegas",
+        "position": [36.250203483973, -115.124883722551],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Phoenix Distribution Center",
+        "city": "Phoenix",
+        "position": [33.491777473099, -111.983840239049],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Denver Distribution Center",
+        "city": "Denver",
+        "position": [39.7401714532873, -104.968782808148],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Monterrey Distribution Center",
+        "city": "Monterrey",
+        "position": [25.7005808656203, -100.311383898681],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Ciudad de Mexico Distribution Center",
+        "city": "Ciudad de Mexico",
+        "position": [19.4432426332339, -99.1103964607991],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "San Jose Distribution Center",
+        "city": "San Jose",
+        "position": [9.93439709851231, -84.1030973919308],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Caracas Distribution Center",
+        "city": "Caracas",
+        "position": [10.499598812479, -66.9195835147137],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Brasilia Distribution Center",
+        "city": "Brasilia",
+        "position": [-15.7055452975284, -47.8687230280382],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Buenos Aires Distribution Center",
+        "city": "Buenos Aires",
+        "position": [-34.58343853068, -58.3572407097264],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      },
+      {
+        "description": "Natal Distribution Center",
+        "city": "Natal",
+        "position": [-5.76660021789371, -35.2201964261473],
+        "type": "DistributionCenter",
+        "hasProblem": false
+      }
+    ],
+    "destinationCenters": [
+      {
+        "description": "Oulu Distribution Center",
+        "city": "Oulu",
+        "position": [65.0025825159524, 25.4361666275123],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Calcuta Distribution Center",
+        "city": "Calcuta",
+        "position": [22.6074775536838, 88.3990033706775],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Vorkutá Distribution Center",
+        "city": "Vorkutá",
+        "position": [67.7353656416713, 63.99429951046],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Tokio Distribution Center",
+        "city": "Tokio",
+        "position": [35.7127010574632, 139.713541201834],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Luanda Distribution Center",
+        "city": "Luanda",
+        "position": [-8.84964412601946, 13.2467577927022],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Bogota Distribution Center",
+        "city": "Bogota",
+        "position": [4.75324641179155, -74.0832373862452],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Los Angeles Distribution Center",
+        "city": "Los Angeles",
+        "position": [34.0443008578638, -118.25178727831],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Dallas Distribution Center",
+        "city": "Dallas",
+        "position": [32.7629454454661, -96.7882236207493],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Montreal Distribution Center",
+        "city": "Montreal",
+        "position": [45.4736036842789, -73.6245025430486],
+        "type": "DestinationCenter"
+      },
+      {
+        "description": "Kugluktuk Distribution Center",
+        "city": "Kugluktuk",
+        "position": [67.8259305620192, -115.091309606741],
+        "type": "DestinationCenter"
+      }
+    ],
+    "relationShips": [
+      {
+        "from": "Madrid",
+        "to": "Istambul",
+        "positionFrom": [40.416775, -3.70379],
+        "positionTo": [41.00824, 28.978359]
+      },
+      {
+        "from": "Madrid",
+        "to": "Tripoli",
+        "positionFrom": [40.416775, -3.70379],
+        "positionTo": [32.9233992348513, 13.1692539522935]
+      },
+      {
+        "from": "Madrid",
+        "to": "Stockholm",
+        "positionFrom": [40.416775, -3.70379],
+        "positionTo": [59.33279, 18.064489]
+      },
+      {
+        "from": "Madrid",
+        "to": "London",
+        "positionFrom": [40.416775, -3.70379],
+        "positionTo": [51.507351, 0.127758]
+      },
+      {
+        "from": "Madrid",
+        "to": "Moscow",
+        "positionFrom": [40.416775, -3.70379],
+        "positionTo": [55.755871, 37.61768]
+      },
+      {
+        "from": "London",
+        "to": "Natal",
+        "positionFrom": [51.507351, 0.127758],
+        "positionTo": [-5.76660021789371, -35.2201964261473]
+      },
+      {
+        "from": "London",
+        "to": "Oulu",
+        "positionFrom": [51.507351, 0.127758],
+        "positionTo": [65.0025825159524, 25.4361666275123]
+      },
+      {
+        "from": "London",
+        "to": "Stockholm",
+        "positionFrom": [51.507351, 0.127758],
+        "positionTo": [59.33279, 18.064489]
+      },
+      {
+        "from": "Stockholm",
+        "to": "Istambul",
+        "positionFrom": [59.33279, 18.064489],
+        "positionTo": [41.00824, 28.978359]
+      },
+      {
+        "from": "Istambul",
+        "to": "Tripoli",
+        "positionFrom": [41.00824, 28.978359],
+        "positionTo": [32.9233992348513, 13.1692539522935]
+      },
+      {
+        "from": "Moscow",
+        "to": "Kabul",
+        "positionFrom": [55.755871, 37.61768],
+        "positionTo": [34.5647607289111, 69.2197289242998]
+      },
+      {
+        "from": "Moscow",
+        "to": "Abu Dhabi",
+        "positionFrom": [55.755871, 37.61768],
+        "positionTo": [24.4519366588493, 54.3780168754372]
+      },
+      {
+        "from": "Moscow",
+        "to": "Vorkutá",
+        "positionFrom": [55.755871, 37.61768],
+        "positionTo": [67.7353656416713, 63.99429951046]
+      },
+      {
+        "from": "Abu Dhabi",
+        "to": "Hong Kong",
+        "positionFrom": [24.4519366588493, 54.3780168754372],
+        "positionTo": [22.1002227971559, 114.199396547031]
+      },
+      {
+        "from": "Abu Dhabi",
+        "to": "Shanghai",
+        "positionFrom": [24.4519366588493, 54.3780168754372],
+        "positionTo": [31.2692897243138, 121.538705764063]
+      },
+      {
+        "from": "Abu Dhabi",
+        "to": "Vorkutá",
+        "positionFrom": [24.4519366588493, 54.3780168754372],
+        "positionTo": [67.7353656416713, 63.99429951046]
+      },
+      {
+        "from": "Abu Dhabi",
+        "to": "Jartum",
+        "positionFrom": [24.4519366588493, 54.3780168754372],
+        "positionTo": [15.5067918525679, 32.5652052203144]
+      },
+      {
+        "from": "Abu Dhabi",
+        "to": "Beijing",
+        "positionFrom": [24.4519366588493, 54.3780168754372],
+        "positionTo": [39.9074302904435, 116.402175832218]
+      },
+      {
+        "from": "Abu Dhabi",
+        "to": "Calcuta",
+        "positionFrom": [24.4519366588493, 54.3780168754372],
+        "positionTo": [22.6074775536838, 88.3990033706775]
+      },
+      {
+        "from": "Beijing",
+        "to": "Tokio",
+        "positionFrom": [39.9074302904435, 116.402175832218],
+        "positionTo": [35.7127010574632, 139.713541201834]
+      },
+      {
+        "from": "Shanghai",
+        "to": "Tokio",
+        "positionFrom": [31.2692897243138, 121.538705764063],
+        "positionTo": [35.7127010574632, 139.713541201834]
+      },
+      {
+        "from": "Shanghai",
+        "to": "Perth",
+        "positionFrom": [31.2692897243138, 121.538705764063],
+        "positionTo": [-31.9391467557776, 114.199396547031]
+      },
+      {
+        "from": "Hong Kong",
+        "to": "Sidney",
+        "positionFrom": [22.1002227971559, 114.199396547031],
+        "positionTo": [-33.803000912835, 151.234178985345]
+      },
+      {
+        "from": "Hong Kong",
+        "to": "Perth",
+        "positionFrom": [22.1002227971559, 114.199396547031],
+        "positionTo": [-31.9391467557776, 114.199396547031]
+      },
+      {
+        "from": "Hong Kong",
+        "to": "Kuala Lumpur",
+        "positionFrom": [22.1002227971559, 114.199396547031],
+        "positionTo": [3.15652434809759, 101.856943971796]
+      },
+      {
+        "from": "Kuala Lumpur",
+        "to": "Calcuta",
+        "positionFrom": [3.15652434809759, 101.856943971796],
+        "positionTo": [22.6074775536838, 88.3990033706775]
+      },
+      {
+        "from": "Sidney",
+        "to": "Tokio",
+        "positionFrom": [-33.803000912835, 151.234178985345],
+        "positionTo": [35.7127010574632, 139.713541201834]
+      },
+      {
+        "from": "Jartum",
+        "to": "Luanda",
+        "positionFrom": [15.5067918525679, 32.5652052203144],
+        "positionTo": [-8.84964412601946, 13.2467577927022]
+      },
+      {
+        "from": "Jartum",
+        "to": "Calcuta",
+        "positionFrom": [15.5067918525679, 32.5652052203144],
+        "positionTo": [22.6074775536838, 88.3990033706775]
+      },
+      {
+        "from": "Tripoli",
+        "to": "Luanda",
+        "positionFrom": [32.9233992348513, 13.1692539522935],
+        "positionTo": [-8.84964412601946, 13.2467577927022]
+      },
+      {
+        "from": "Conakri",
+        "to": "Luanda",
+        "positionFrom": [9.6680344397612, -13.5981712072533],
+        "positionTo": [-8.84964412601946, 13.2467577927022]
+      },
+      {
+        "from": "Conakri",
+        "to": "Natal",
+        "positionFrom": [9.6680344397612, -13.5981712072533],
+        "positionTo": [-5.76660021789371, -35.2201964261473]
+      },
+      {
+        "from": "Marrakech",
+        "to": "Natal",
+        "positionFrom": [31.650257233114, -7.99006886072168],
+        "positionTo": [-5.76660021789371, -35.2201964261473]
+      },
+      {
+        "from": "Anchorage",
+        "to": "Kugluktuk",
+        "positionFrom": [61.2334376777177, -149.877121900356],
+        "positionTo": [67.8259305620192, -115.091309606741]
+      },
+      {
+        "from": "Anchorage",
+        "to": "Nuuk",
+        "positionFrom": [61.2334376777177, -149.877121900356],
+        "positionTo": [64.1825353746219, -51.6909195232906]
+      },
+      {
+        "from": "Vancouver",
+        "to": "Kugluktuk",
+        "positionFrom": [49.273284823589, -123.075112001265],
+        "positionTo": [67.8259305620192, -115.091309606741]
+      },
+      {
+        "from": "Vancouver",
+        "to": "Anchorage",
+        "positionFrom": [49.273284823589, -123.075112001265],
+        "positionTo": [61.2334376777177, -149.877121900356]
+      },
+      {
+        "from": "San Diego",
+        "to": "Phoenix",
+        "positionFrom": [32.7183993039687, -117.173063005084],
+        "positionTo": [33.491777473099, -111.983840239049]
+      },
+      {
+        "from": "San Diego",
+        "to": "Kugluktuk",
+        "positionFrom": [32.7183993039687, -117.173063005084],
+        "positionTo": [67.8259305620192, -115.091309606741]
+      },
+      {
+        "from": "San Diego",
+        "to": "Los Angeles",
+        "positionFrom": [32.7183993039687, -117.173063005084],
+        "positionTo": [34.0443008578638, -118.25178727831]
+      },
+      {
+        "from": "San Diego",
+        "to": "Las Vegas",
+        "positionFrom": [32.7183993039687, -117.173063005084],
+        "positionTo": [36.250203483973, -115.124883722551]
+      },
+      {
+        "from": "Toronto",
+        "to": "Montreal",
+        "positionFrom": [43.6130694872751, -79.5100049337056],
+        "positionTo": [45.4736036842789, -73.6245025430486]
+      },
+      {
+        "from": "New York",
+        "to": "Dallas",
+        "positionFrom": [40.7592062728212, -73.9973908544038],
+        "positionTo": [32.7629454454661, -96.7882236207493]
+      },
+      {
+        "from": "New York",
+        "to": "Nuuk",
+        "positionFrom": [40.7592062728212, -73.9973908544038],
+        "positionTo": [64.1825353746219, -51.6909195232906]
+      },
+      {
+        "from": "New York",
+        "to": "Miami",
+        "positionFrom": [40.7592062728212, -73.9973908544038],
+        "positionTo": [25.759913090043, -80.2408234198862]
+      },
+      {
+        "from": "New York",
+        "to": "Montreal",
+        "positionFrom": [40.7592062728212, -73.9973908544038],
+        "positionTo": [45.4736036842789, -73.6245025430486]
+      },
+      {
+        "from": "New York",
+        "to": "Atlanta",
+        "positionFrom": [40.7592062728212, -73.9973908544038],
+        "positionTo": [33.7686936361718, -84.3796101275601]
+      },
+      {
+        "from": "Atlanta",
+        "to": "Dallas",
+        "positionFrom": [33.7686936361718, -84.3796101275601],
+        "positionTo": [32.7629454454661, -96.7882236207493]
+      },
+      {
+        "from": "Atlanta",
+        "to": "Toronto",
+        "positionFrom": [33.7686936361718, -84.3796101275601],
+        "positionTo": [43.6130694872751, -79.5100049337056]
+      },
+      {
+        "from": "Atlanta",
+        "to": "Miami",
+        "positionFrom": [33.7686936361718, -84.3796101275601],
+        "positionTo": [25.759913090043, -80.2408234198862]
+      },
+      {
+        "from": "Denver",
+        "to": "Vancouver",
+        "positionFrom": [39.7401714532873, -104.968782808148],
+        "positionTo": [49.273284823589, -123.075112001265]
+      },
+      {
+        "from": "Denver",
+        "to": "Anchorage",
+        "positionFrom": [39.7401714532873, -104.968782808148],
+        "positionTo": [61.2334376777177, -149.877121900356]
+      },
+      {
+        "from": "Denver",
+        "to": "Nuuk",
+        "positionFrom": [39.7401714532873, -104.968782808148],
+        "positionTo": [64.1825353746219, -51.6909195232906]
+      },
+      {
+        "from": "Denver",
+        "to": "Phoenix",
+        "positionFrom": [39.7401714532873, -104.968782808148],
+        "positionTo": [33.491777473099, -111.983840239049]
+      },
+      {
+        "from": "Denver",
+        "to": "New York",
+        "positionFrom": [39.7401714532873, -104.968782808148],
+        "positionTo": [40.7592062728212, -73.9973908544038]
+      },
+      {
+        "from": "Ciudad de Mexico",
+        "to": "San Diego",
+        "positionFrom": [19.4432426332339, -99.1103964607991],
+        "positionTo": [32.7183993039687, -117.173063005084]
+      },
+      {
+        "from": "Ciudad de Mexico",
+        "to": "Monterrey",
+        "positionFrom": [19.4432426332339, -99.1103964607991],
+        "positionTo": [25.7005808656203, -100.311383898681]
+      },
+      {
+        "from": "San Jose",
+        "to": "Ciudad de Mexico",
+        "positionFrom": [9.93439709851231, -84.1030973919308],
+        "positionTo": [19.4432426332339, -99.1103964607991]
+      },
+      {
+        "from": "San Jose",
+        "to": "Bogota",
+        "positionFrom": [9.93439709851231, -84.1030973919308],
+        "positionTo": [4.75324641179155, -74.0832373862452]
+      },
+      {
+        "from": "San Jose",
+        "to": "Caracas",
+        "positionFrom": [9.93439709851231, -84.1030973919308],
+        "positionTo": [10.499598812479, -66.9195835147137]
+      },
+      {
+        "from": "San Jose",
+        "to": "Monterrey",
+        "positionFrom": [9.93439709851231, -84.1030973919308],
+        "positionTo": [25.7005808656203, -100.311383898681]
+      },
+      {
+        "from": "Brasilia",
+        "to": "Caracas",
+        "positionFrom": [-15.7055452975284, -47.8687230280382],
+        "positionTo": [10.499598812479, -66.9195835147137]
+      },
+      {
+        "from": "Brasilia",
+        "to": "Bogota",
+        "positionFrom": [-15.7055452975284, -47.8687230280382],
+        "positionTo": [4.75324641179155, -74.0832373862452]
+      },
+      {
+        "from": "Brasilia",
+        "to": "Natal",
+        "positionFrom": [-15.7055452975284, -47.8687230280382],
+        "positionTo": [-5.76660021789371, -35.2201964261473]
+      },
+      {
+        "from": "Buenos Aires",
+        "to": "Caracas",
+        "positionFrom": [-34.58343853068, -58.3572407097264],
+        "positionTo": [10.499598812479, -66.9195835147137]
+      },
+      {
+        "from": "Buenos Aires",
+        "to": "Brasilia",
+        "positionFrom": [-34.58343853068, -58.3572407097264],
+        "positionTo": [-15.7055452975284, -47.8687230280382]
+      },
+      {
+        "from": "Buenos Aires",
+        "to": "Bogota",
+        "positionFrom": [-34.58343853068, -58.3572407097264],
+        "positionTo": [4.75324641179155, -74.0832373862452]
+      },
+      {
+        "from": "Natal",
+        "to": "Bogota",
+        "positionFrom": [-5.76660021789371, -35.2201964261473],
+        "positionTo": [4.75324641179155, -74.0832373862452]
+      },
+      {
+        "from": "Natal",
+        "to": "Caracas",
+        "positionFrom": [-5.76660021789371, -35.2201964261473],
+        "positionTo": [10.499598812479, -66.9195835147137]
+      }
+    ]
+  },
+  "details": [
+    {
+      "id": "22",
+      "description": "San Diego Distribution Center",
+      "city": "San Diego",
+      "position": [32.7183993039687, -117.173063005084],
+      "type": "DistributionCenter",
+      "hasProblem": true,
+      "address": "2121 Imperial Ave",
+      "country": "United States",
+      "phoneNumber": "123456789",
+      "timeStart": "07:00AM",
+      "timeEnd": "10:00PM",
+      "idTrucks": "1421412P - 24SGE2 - 876TBJK",
+      "planning": "32",
+      "sales": "81",
+      "sourcing": "74",
+      "warehouseAndDistribution": "15",
+      "production": [
+        { "year": 2013, "production": 20 },
+        { "year": 2014, "production": 25 },
+        { "year": 2015, "production": 40 },
+        { "year": 2016, "production": 65 },
+        { "year": 2017, "production": 50 },
+        { "year": 2018, "production": 70 },
+        { "year": 2019, "production": 80 },
+        { "year": 2020, "production": 90 }
+      ]
+    }
+  ]
+}

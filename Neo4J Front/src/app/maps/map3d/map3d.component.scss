@@ -1,0 +1,83 @@
+.earth-wrapper {
+  height: calc(100vh - 140px);
+  padding: 30px 4%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  .dot-earth{
+    width: 10%;
+    max-width: 150px;
+    img {
+      transform: translateX(100%);
+      width: 100%;
+    }
+    &:last-child {
+      transform: scaleX(-1);
+    }
+  }
+  #myearth {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 80vh;
+    height: 120vh;
+    max-height: 200vh;
+    overflow: hidden;
+  }
+}
+
+@media screen  and (max-width: 1450px) {
+  .dot-earth{
+    width: 15%;
+    max-width: 150px;
+    img {
+      transform: translateX(15%);
+      min-width: 70px;
+    }
+  }
+}
+
+@media screen  and (max-width: 800px) {
+  .earth-wrapper {
+    height: calc(100vh - 130px);
+    padding: 30px 2%;
+    .dot-earth{
+      width: 3rem;
+    }
+  }
+}
+
+@media screen  and (max-width: 600px) {
+  .dot-earth{
+    img {
+      transform: translateX(15%) !important;
+    }
+  }
+}
+
+@media screen  and (max-width: 450px) {
+  .earth-wrapper {
+    padding: 1rem 0 !important;
+    height: calc(100vh - 120px);
+    .dot-earth{
+      overflow: visible;
+      width: 2rem;
+      img {
+        width: 70px !important;
+      }
+    }
+    #myearth {
+      transform: translate(0, 0) !important;
+      height: 100%;
+    }
+  }
+}
+
+@media screen  and (max-width: 415px) {
+  .dot-earth{
+    width: 2.25rem;
+    img {
+      transform: translateX(10%) !important;
+    }
+  }
+}

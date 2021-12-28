@@ -1,0 +1,84 @@
+@import "../../../../vars";
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.tag-sensor {
+  position: absolute;
+  display: block;
+}
+.tag-sensor-image {
+  z-index: 900;
+}
+.tag-sensor-text {
+  background-color: $problemColor;
+  color: $black;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  transform: translate(-70%, -100%);
+  margin-bottom: 4px;
+  @include font-family("DIN Bold");
+  text-transform: uppercase;
+  padding: 2px 8px;
+  padding-left: 15px;
+  white-space: nowrap;
+
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+}
+
+svg {
+  width: 80%;
+  margin-left: -60px;
+  max-width: 675px;
+  .sensor {
+    z-index: 99999;
+    &:hover {
+      cursor: pointer;
+    }
+    &.problem {
+      fill: $problemColor;
+      animation: blinker 2s linear infinite;
+    }
+  }
+  .sensor[fill="red"] {
+    cursor: pointer;
+    animation: blinker 2s linear infinite;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  svg {
+    transform: scale(1.5);
+    padding-left: 100px;
+    margin-left: unset;
+    width: unset;
+    max-width: unset;
+  }
+
+  .tag-sensor-text {
+    transform: translate(-40%, -100%) scale(0.8) !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  svg {
+    transform: scale(3.5);
+  }
+}
