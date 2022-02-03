@@ -1,0 +1,90 @@
+@import "../../../../vars";
+
+.stadistics.percents {
+  display: flex;
+  justify-content: space-between;
+  max-height: 100px;
+  margin-top: 20px;
+  gap: 20px;
+  canvas {
+    height: 100px;
+    opacity: 0.2;
+  }
+  & div {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    .pseudo-background {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    &.good {
+      .pseudo-background {
+        background-image: url("/assets/images/stadistics-circle-light.svg") !important;
+      }
+    }
+  }
+
+  & div {
+    background-image: url("/assets/images/stadistics-circle.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.wharehouse-level {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+  .wharehouse-level-title {
+    width: 33%;
+  }
+  .wharehouse-level-container {
+    display: flex;
+    gap: 5px;
+    flex-grow: 1;
+  }
+  .wharehouse-level-item {
+    min-height: 30px;
+    flex-grow: 1;
+    background: rgba(77, 255, 255, 0.3);
+    transition: all 1s ease-in-out;
+    &.red {
+      background: $problemColor;
+    }
+
+    &.green {
+      background: $primaryColor;
+    }
+  }
+}
+
+.production-container {
+  margin-top: 20px;
+  max-height: 120px;
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    canvas {
+      height: 120px !important;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .stadistics.percents {
+    & div {
+      width: 58px;
+      height: 58px;
+    }
+  }
+}

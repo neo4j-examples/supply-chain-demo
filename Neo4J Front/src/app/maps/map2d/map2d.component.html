@@ -1,0 +1,70 @@
+<div [ngClass]="{ 'showed-spinner': !showMap && !showRoute, 'reduceMap': showTrucksCards || showRoute }" class="map2d">
+  <span
+    *ngIf="!showMap && !showRoute"
+    class="spinner-double-section-far"
+  ></span>
+
+  <neo4j-map
+    [ngClass]="{ 'hidden-map': showRoute }"
+    *ngIf="showMap"
+    #map
+    [places]="locations"
+    [idMarkerFrom3D]="idMarkerFrom3D"
+    [connections]="connections"
+    (markerClick)="onMarkerClicked($event)"
+    (truckClicked)="onTruckClicked($event)"
+  ></neo4j-map>
+  <neo4j-route-detailed
+    *ngIf="showRoute"
+    [truckId]="truckId"
+    [truck]="truckSelected"
+    [destination]="destination"
+  ></neo4j-route-detailed>
+</div>
+
+<neo4j-detail-distribution-center-modal
+  [ngClass]="{'hideModal': showTrucksCards}"
+  (close)="onCloseDetails()"
+  (getDetailsTrucks)="onGetDetailsTrucks($event)"
+  (hiddenDetailsTrucks)="onHiddenDetailsTrucks()"
+  (paintMagicPlaces)="onPaintMagicPlaces($event)"
+  [details]="details"
+  *ngIf="showDetails"
+></neo4j-detail-distribution-center-modal>
+
+<neo4j-detail-vehicle-modal
+  *ngIf="truckDetailShowed"
+  (closeModalTruck)="onCloseModalTruckDetail()"
+  (showIncident)="onShowIncident()"
+  (showRouteDetailed)="onShowRouteDetailed()"
+  (hiddenRouteDetailed)="onHiddenRouteDetailed()"
+  [details]="details"
+  [route]="route"
+>
+</neo4j-detail-vehicle-modal>
+
+<neo4j-truck-incident-modal
+  *ngIf="showTruckProblem"
+  [incident]="incident"
+  [truckInfo]="truckSelected"
+  (callDriver)="showCall = true"
+  (closeModal)="onCloseTruckIncidentModal()"
+></neo4j-truck-incident-modal>
+
+<neo4j-generic-problem-modal
+  *ngIf="showGenericProblem"
+  [incident]="incident"
+  [truckInfo]="truckSelected"
+  (callDriver)="showCall = true"
+  (closeModal)="onCloseGenericIncidentModal()"
+></neo4j-generic-problem-modal>
+
+<neo4j-truck-reduced-info-modal 
+  [ngClass]="{'hideCards': !showTrucksCards}" *ngIf="showTrucksCards"
+  (truckClicked)="onTruckClicked($event)"
+  (backToDetails)="backToDetails()"
+  [locations]="locations"
+>
+</neo4j-truck-reduced-info-modal>
+
+<neo4j-call-in-progress *ngIf="showCall" (callEnd)="showCall = false"></neo4j-call-in-progress>

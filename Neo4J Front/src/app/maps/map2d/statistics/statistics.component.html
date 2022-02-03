@@ -1,0 +1,36 @@
+<div class="stadistics percents">
+  <div [ngClass]="{ good: details.planning >= 50 }">
+    <div class="pseudo-background">{{ details.planning }}%</div>
+    <canvas #planning></canvas>
+    <span>PLANNING</span>
+  </div>
+  <div [ngClass]="{ good: details.sales >= 50 }">
+    <div class="pseudo-background">{{ details.sales }}%</div>
+    <canvas #sales></canvas>
+    <span>SALES</span>
+  </div>
+  <div [ngClass]="{ good: details.sourcing >= 50 }">
+    <div class="pseudo-background">{{ details.sourcing }}%</div>
+    <canvas #sourcing></canvas>
+    <span>SOURCING</span>
+  </div>
+</div>
+<div class="wharehouse-level">
+  <div class="wharehouse-level-title">WAREHOUSE & DISTRIBUTION</div>
+  <div class="wharehouse-level-container">
+    <div
+      class="wharehouse-level-item"
+      *ngFor="let item of wharehouseCapacity"
+      [ngClass]="{
+        red: capacity > item && 6 > capacity,
+        green: capacity > item && capacity > 6
+      }"
+    ></div>
+  </div>
+</div>
+<div class="production-container">
+  <span>PRODUCTION</span>
+  <div class="chart-container">
+    <canvas #production></canvas>
+  </div>
+</div>

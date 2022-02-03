@@ -1,0 +1,86 @@
+@import "../../../vars";
+
+.call-in-progress-wrapper {
+  background-color: $bgBackdrop;
+  backdrop-filter: blur(5px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 901;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .first-phone {
+    background-color: $black;
+    border-radius: 40px;
+    background-image: url("/assets/images/phone.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 439px;
+    width: 226px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 100;
+    padding: 30px;
+    img {
+      filter: invert(1);
+    }
+    .top {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      padding: 30px;
+      .time {
+        font-size: 10px;
+      }
+    }
+    .bottom {
+      padding: 60px;
+    }
+    .call-end-dial {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      div {
+        height: 30px;
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+      }
+      img {
+        width: 80%;
+      }
+
+      .call-end {
+        background-color: red;
+        border-radius: 50%;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .call-in-progress-wrapper {
+    .first-phone {
+      .top {
+        padding: 0;
+        padding-top: 60px;
+      }
+      .bottom {
+        padding: 0;
+      }
+    }
+  }
+}

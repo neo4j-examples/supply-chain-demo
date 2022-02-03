@@ -1,0 +1,46 @@
+# Node.js  
+# Build a general Node.js project with npm.  
+# Add steps that analyze code, save build artifacts, deploy, and more:  
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript  
+  
+trigger:  
+- master  
+  
+pool:  
+  vmImage: 'ubuntu-latest'  
+  
+steps:  
+- task: NodeTool@0  
+  inputs:  
+    versionSpec: '12.x'  
+  displayName: 'Install Node.js 12.x'  
+- task: Npm@1  
+  displayName: 'Angular CLI'  
+  inputs:  
+    command: custom  
+    verbose: false  
+    customCommand: 'install @angular/cli@12.2.8'  
+- task: Npm@1  
+  displayName: 'npm install'  
+  inputs:  
+    verbose: false  
+  
+- task: Npm@1  
+  displayName: Build  
+  inputs:  
+    command: custom  
+    verbose: false  
+    customCommand: 'run build'  
+  
+- task: CopyPublishBuildArtifacts@1  
+  displayName: 'Copy Publish Artifact: test'  
+  inputs:  
+    CopyRoot: dist  
+    Contents: '**'  
+    ArtifactName: test  
+    ArtifactType: Container  
+  
+- task: DownloadPipelineArtifact@2  
+  displayName: 'Download Pipeline Artifact'  
+  inputs:  
+    targetPath: ' $(Build.ArtifactStagingDirectory)/dist/AngularTest'

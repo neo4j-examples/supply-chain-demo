@@ -1,0 +1,91 @@
+<div class="modal" [ngClass]="{'reduceModal': isShowedRoute}">
+  <span class="city-name"> ON ROUTE </span>
+
+  <img
+    (click)="clickClose()"
+    class="close-icon"
+    src="assets/images/close-icon.svg"
+  />
+  <div class="modal-content">
+    <div class="main-info">
+      <span class="name" title="{{ details.description }}">{{
+        details.description
+      }}</span>
+      <span>ID: {{ details.reference }}</span>
+    </div>
+    <div class="contact-info">
+      <div class="item-contact location">
+        <img src="assets/images/location-icon.svg" />
+        <span>{{ details.address }}</span>
+      </div>
+      <div class="item-contact call">
+        <img src="assets/images/call-icon.svg" />
+        <span>{{ details.phoneNumber }}</span>
+      </div>
+      <div class="item-contact time">
+        <img src="assets/images/time-icon.svg" />
+        <span>{{ details.timeStart }} - {{ details.timeEnd }}</span>
+      </div>
+    </div>
+    <div class="call-action">
+      <button (click)="showRoute()" [ngClass]="{ active: isShowedRoute }">
+        {{ isShowedRoute ? "STOP VIEW THE ROUTE" : "SHOW ROUTE ON MAP"}}
+      </button>
+    </div>
+    <div class="route-timeline">
+      <div class="container origin">
+        <div class="info">
+          <span class="title">{{ route.originRoute.description }}</span>
+          <small>{{
+            actualDate.getTime() - 12843200 | date: "MMM d, y - h:mm a":"PST"
+          }}</small>
+        </div>
+        <div class="info">
+          <div class="address">
+            <span>{{ route.originRoute.address }}</span>
+            <span>{{ route.originRoute.city }}</span>
+            <span>{{ route.originRoute.country }}</span>
+          </div>
+        </div>
+      </div>
+      <div class="container ontheway">
+        <div class="title">
+          <span>ON THE WAY</span>
+          <div class="background-ontheway"></div>
+        </div>
+      </div>
+      <div *ngIf="route.incidentRoute" class="container problem">
+        <div class="info">
+          <span class="title">{{ route.incidentRoute.description }}</span>
+          <small>{{ actualDate | date: "MMM d, y - h:mm a":"PST" }}</small>
+        </div>
+        <div class="info">
+          <div class="address">
+            <span>{{ route.incidentRoute.address }}</span>
+            <span>{{ route.incidentRoute.city }}</span>
+            <span>{{ route.incidentRoute.country }}</span>
+          </div>
+          <div class="details-incident">
+            <button (click)="showIncidentClick()">DETAILS</button>
+          </div>
+        </div>
+      </div>
+      <div class="container destination">
+        <div class="info">
+          <span class="title">{{ route.destinationRoute.description }}</span>
+          <div class="date">
+            <small>{{
+              actualDate.getTime() + 5873200 | date: "MMM d, y - h:mm a":"PST"
+            }}</small>
+            <small>(estimated hour)</small>
+          </div>
+        </div>
+        <div class="address">
+          <span>{{ route.destinationRoute.address }}</span>
+          <span>{{ route.destinationRoute.city }}</span>
+          <span>{{ route.destinationRoute.country }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

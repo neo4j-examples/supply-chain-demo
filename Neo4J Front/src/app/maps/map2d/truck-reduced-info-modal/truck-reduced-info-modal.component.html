@@ -1,0 +1,31 @@
+<article>
+  <img
+    src="assets/images/left-arrow@1x-red.png"
+    alt="Back to details"
+    (click)="backToDetails.emit(true)"
+  />
+  <div class="cards">
+    <ng-container *ngFor="let truck of locations">
+      <div
+        class="card"
+        [ngClass]="{ problem: truck.hasProblem }"
+        (click)="
+          truckClicked.emit({ target: { idDistributionCenter: truck.id } })
+        "
+        *ngIf="truck.type === 'trucks'"
+      >
+        <span>{{ truck.name }}</span>
+        <span class="id">ID: {{ truck.id }} </span>
+        <div class="call-action">
+          <button
+            (click)="
+              truckClicked.emit({ target: { idDistributionCenter: truck.id } })
+            "
+          >
+            DETAILS
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</article>

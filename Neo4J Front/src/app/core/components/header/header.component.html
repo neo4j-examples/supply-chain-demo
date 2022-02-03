@@ -1,0 +1,30 @@
+<nav>
+  <img class="logo" src="assets/images/neo4j_logo.png" />
+
+  <form class="searcher" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input placeholder="Search location" formControlName="searcher" />
+    <img src="assets/images/lupa.svg" alt="" (click)="onSubmit()" />
+  </form>
+  <div id="collapseSearch">
+    <img src="assets/images/lupa.svg" alt="" (click)="openSearcher()" />
+  </div>
+
+  <div class="info-user">
+    <!-- username -->
+    <span>John Doe</span>
+    <img src="assets/images/avatar.png" />
+  </div>
+</nav>
+
+<div class="border-top">
+  <img src="assets/images/border.svg" alt="" />
+</div>
+
+<div id="modalSearch" *ngIf="isOpen">
+  <img src="assets/images/left-arrow@1x.png" alt="" (click)="closeSearcher()" />
+
+  <form class="searcherMobile" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input placeholder="Search location" formControlName="searcher" />
+    <img src="assets/images/lupa.svg" alt="" (click)="onSubmit()" />
+  </form>
+</div>

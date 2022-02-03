@@ -1,0 +1,61 @@
+<div class="modal" [ngClass]="{ minimize: minimize }">
+  <span class="city-name"> {{ details.city }} </span>
+
+  <img
+    (click)="minimize = !minimize"
+    class="minimize-icon"
+    src="assets/images/minimize-icon-red.svg"
+  />
+  <img
+    (click)="clickClose()"
+    class="close-icon"
+    src="assets/images/close-icon-red.svg"
+  />
+  <div class="modal-content">
+    <div class="main-info">
+      <span class="name" title="{{ details.description }}">{{
+        details.description
+      }}</span>
+      <span>ID: {{ details.reference }}</span>
+    </div>
+    <div class="contact-info">
+      <div class="item-contact locati V M, CDFRX V V BN Con">
+        <img src="assets/images/location-icon.svg" />
+        <span>{{ details.address }}</span>
+      </div>
+      <div class="item-contact call">
+        <img src="assets/images/call-icon.svg" />
+        <span>{{ details.phoneNumber }}</span>
+      </div>
+      <div class="item-contact time">
+        <img src="assets/images/time-icon.svg" />
+        <span>{{ details.timeStart }} - {{ details.timeEnd }}</span>
+      </div>
+    </div>
+    <div class="call-action">
+      <button
+        [disabled]="!showStadistics"
+        [ngClass]="{ active: detailsShowed }"
+        (click)="showDetailsTrucks()"
+      >
+        DETAILS
+      </button>
+      <button
+        [disabled]="detailsShowed"
+        [ngClass]="{ active: !showStadistics }"
+        (click)="showMagicPlacesForm()"
+      >
+        MAGIC PLACE
+      </button>
+    </div>
+    <neo4j-statistics
+      [details]="details"
+      *ngIf="showStadistics"
+    ></neo4j-statistics>
+    <neo4j-magic-places
+      *ngIf="!showStadistics"
+      [itemsMagicPlaces]="itemsMagicPlaces"
+      (getMagicPlaces)="onGetMagicPlaces($event)"
+    ></neo4j-magic-places>
+  </div>
+</div>

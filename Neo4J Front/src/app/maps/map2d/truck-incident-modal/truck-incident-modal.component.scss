@@ -1,0 +1,233 @@
+@import "../../../../vars";
+
+.main-container {
+  display: flex;
+  z-index: 701;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  .content-wrapper {
+    height: 95%;
+    width: 60%;
+    position: relative;
+    display: flex;
+    background-image: url("/assets/images/frame.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    .background {
+      position: absolute;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+    }
+    .content {
+      padding: 40px 60px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: $primaryColor;
+      overflow: hidden;
+      .header-modal {
+        display: flex;
+        justify-content: space-between;
+        .card-driver {
+          display: flex;
+          flex-direction: column;
+
+          .personal-info {
+            display: flex;
+            .name {
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+      }
+      .info-back-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        .back-wrapper {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .icon-back {
+            height: 15px;
+            width: 15px;
+            background: $white;
+            border-radius: 50%;
+            padding: 5px;
+          }
+        }
+      }
+
+      .problem-name {
+        @include font-family("DIN Bold");
+        font-weight: 700;
+      }
+
+      .id-truck {
+        font-size: 14px;
+      }
+      .tag-header {
+        font-size: 14px;
+        line-height: 20px;
+        color: $black;
+        width: fit-content;
+        letter-spacing: 2.5px;
+        @include font-family("DIN Bold");
+        text-transform: uppercase;
+        background: $primaryColor;
+        padding: 2px 20px;
+        z-index: 1;
+        position: relative;
+        &::before {
+          z-index: -1;
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 12px;
+          width: 100%;
+          height: 100%;
+          background-color: $primaryColor;
+          width: 0;
+          height: 0;
+          border: 0 solid transparent;
+          border-right-width: 12px;
+          border-left-width: 0px;
+          border-bottom: 12px solid $black;
+        }
+      }
+
+      .truck {
+        padding: 8px 30px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-image: url(/assets/images/frame_truck.svg);
+      }
+      .charts {
+        display: inline-flex;
+        .charts-item {
+          padding: 5px;
+          width: 50%;
+          img {
+            border-radius: 10px;
+          }
+        }
+      }
+      .details {
+        display: flex;
+        padding: 10px 20px;
+        .separator {
+          min-width: 0.1px;
+          height: 100%;
+          background: #ffffff66;
+        }
+        .details-item {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+          padding: 10px 20px;
+          letter-spacing: 0.22px;
+          font-size: 14px;
+          .title {
+            font-weight: 400 !important;
+            line-height: 30px;
+          }
+          .description {
+            font-weight: 300 !important;
+            line-height: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-icon-back {
+    display: block;
+    position: absolute;
+    top: 10px;
+    z-index: 800;
+  }
+  .main-container {
+    width: 100%;
+    animation-name: showContent;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    bottom: 170px !important;
+    font-size: 0.85rem !important;
+    left: 50% !important;
+    top: unset !important;
+    max-width: calc(100% - 1rem);
+    padding: 1rem;
+    .content-wrapper {
+      width: 100%;
+      .content {
+        padding: 40px 20px;
+
+        .truck {
+          padding: 8px 30px;
+          background: none;
+          overflow-x: scroll;
+          overflow-y: hidden;
+        }
+        .header-modal {
+          flex-direction: column;
+          gap: 5px;
+        }
+        .details {
+          flex-direction: column;
+          padding: unset;
+          .details-item {
+            width: 100%;
+            font-size: 0.85rem !important;
+            padding-top: 0;
+            .title {
+              line-height: 25px;
+            }
+          }
+        }
+        .call-action {
+          margin-top: 10px !important;
+
+          button {
+            font-size: 12px;
+          }
+        }
+
+        .info-back-wrapper {
+          flex-direction: unset !important;
+          flex-wrap: wrap;
+          gap: 10px !important;
+          justify-content: space-between !important;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .hide {
+    display: none !important;
+  }
+}
+
+@keyframes showContent {
+  from {
+    transform: translate(-50%, 200%);
+  }
+  to {
+    transform: translate(-50%, 25%);
+  }
+}

@@ -1,0 +1,32 @@
+//  Colors
+$problemColor: #fe685a;
+$primaryColor: #00CFCF;
+$destinationColor: #ffde63;
+$white: #FFFFFF;
+$black: #000000;
+$bgCAbutton: #00cfcf4d;
+$bgModalItems: #00cfcf26;
+$bgBackdrop: #000000cc;
+
+// Font family
+@mixin font-family($font: "DIN Medium") {
+    font-family: $font, sans-serif;
+}
+
+@mixin bg-linear-gradient($borderColor, $bgColor: "") {
+    @if $bgColor != "" {
+        background-color: $bgColor !important;
+    }
+    background: linear-gradient(to right, $borderColor 2px, transparent 2px) 0 0,
+        linear-gradient(to right, $borderColor 2px, transparent 2px) 0 100%,
+        linear-gradient(to left, $borderColor 2px, transparent 2px) 100% 0,
+        linear-gradient(to left, $borderColor 2px, transparent 2px) 100% 100%,
+        linear-gradient(to bottom, $borderColor 2px, transparent 2px) 0 0,
+        linear-gradient(to bottom, $borderColor 2px, transparent 2px) 100% 0,
+        linear-gradient(to top, $borderColor 2px, transparent 2px) 0 100%,
+        linear-gradient(to top, $borderColor 2px, transparent 2px) 100% 100%; 
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    outline: none;
+    border: none;
+}

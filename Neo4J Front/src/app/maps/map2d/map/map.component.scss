@@ -1,0 +1,34 @@
+@import "../../../../vars";
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.zoom-control {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  z-index: 403;
+
+  color: $primaryColor;
+
+  .main-control {
+    display: flex;
+    gap: 20px;
+    padding: 4px 6px;
+    background: rgba(0, 206, 206, 0.3);
+  }
+  accent-color: rgba(0, 204, 204, 0.5);
+}
+.leaflet-container {
+  background: $black !important;
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+  opacity: 0;
+}
+.leaflet-top leaflet-left {
+  display: none !important;
+}

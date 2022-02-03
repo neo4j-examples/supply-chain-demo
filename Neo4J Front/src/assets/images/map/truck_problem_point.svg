@@ -1,0 +1,39 @@
+<svg width="120" height="120" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+ <title>6A2CDD39-C7D6-4CD5-A5A6-9868852DF017</title>
+ <desc>Created with sketchtool.</desc>
+ <defs>
+  <polygon points="50 164.610144 216.01472 164.610144 216.01472 0.000864 50 0.000864" id="path-1"/>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g fill-rule="evenodd" fill="none" id="Page-1_final">
+   <g id="1-Earth-2D-zoom-california-details-hover">
+    <g id="Group-20">
+     <g id="Group-15">
+      <g id="point-copy-7">
+       <g id="Group-14-Copy-12">
+        <circle r="55.29384" cy="60" cx="60" opacity="0.2" fill-rule="nonzero" fill="#FE685A" id="Oval"/>
+        <circle r="44.81568" cy="60" cx="60" opacity="0.4" fill-rule="nonzero" fill="#FE685A" id="Oval"/>
+        <circle r="34.3224" cy="60" cx="60" opacity="0.6" fill-rule="nonzero" fill="#FE685A" id="Oval"/>
+        <circle r="23.84424" cy="228.30363" cx="115.26302" transform="rotate(-76.72 59.9846 60.0049) translate(-55.2784 -168.299)" opacity="0.8" fill-rule="nonzero" fill="#FE685A" id="Oval"/>
+        <circle r="13.36608" cy="60" cx="60" fill-rule="nonzero" fill="#FE685A" id="Oval"/>
+       </g>
+       <g stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" stroke="#000000" id="Group-49">
+        <polyline points="48.59659957885742,60.34995651245117 48.59659957885742,63.20499801635742 49.6161003112793,63.20499801635742 49.6161003112793,66.04563522338867 51.65034103393555,66.04563522338867 " id="Stroke-1"/>
+        <path id="Stroke-2" d="m48.62616,54.47l0,-2.76384l21.05184,0l2.04192,4.66176l2.16288,1.47072c0.32832,0.22368 0.66336,0.5952 0.66336,0.99168l0,7.27488l-2.52192,0"/>
+        <path id="Stroke-4" d="m56.34082,66.12027l10.992,0"/>
+        <path id="Stroke-6" d="m69.67819,68.39048c1.29312,0 2.34528,-1.05216 2.34528,-2.34528c0,-1.29312 -1.05216,-2.34528 -2.34528,-2.34528c-1.29312,0 -2.34528,1.05216 -2.34528,2.34528c0,1.29312 1.05216,2.34528 2.34528,2.34528z"/>
+        <path id="Stroke-8" d="m53.99525,68.39048c1.29312,0 2.34528,-1.05216 2.34528,-2.34528c0,-1.29312 -1.05216,-2.34528 -2.34528,-2.34528c-1.29312,0 -2.34528,1.05216 -2.34528,2.34528c0,1.29312 1.05216,2.34528 2.34528,2.34528z"/>
+        <path id="Stroke-10" d="m50.45054,58.43l-2.75424,0"/>
+        <path id="Stroke-12" d="m46.70616,56.52123l4.77024,0"/>
+        <path id="Stroke-14" d="m49.61611,63.20005l24.91584,0"/>
+        <path id="Stroke-16" d="m66.00878,51.70626l0,11.49408"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,233 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./_vars";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@font-face {
+  font-family: "DIN Bold";
+  src: local("DIN Bold"), 
+    url('./assets/fonts/DIN/DIN-Bold.eot'),
+    url('./assets/fonts/DIN/DIN-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/DIN/DIN-Bold.woff2') format("woff2"),
+    url('./assets/fonts/DIN/DIN-Bold.woff') format("woff"),
+    url('./assets/fonts/DIN/DIN-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: "DIN Medium";
+  src: local("DIN Medium"),
+    url('./assets/fonts/DIN/DIN-Medium.eot'),
+    url('./assets/fonts/DIN/DIN-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/DIN/DIN-Medium.woff2') format("woff2"),
+    url('./assets/fonts/DIN/DIN-Medium.woff') format("woff"),
+    url('./assets/fonts/DIN/DIN-Medium.ttf') format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $black;
+  color: $white;
+  @include font-family("Montserrat");
+  overflow: hidden;
+  max-height: calc(100vh - 1rem) !important;
+  margin: 1rem 0.5rem 0;
+}
+
+.leaflet-container .leaflet-marker-pane img.leaflet-marker-icon {
+  &:not(.incident-marker) {
+    margin-top: -25px !important;
+    margin-left: -25px !important;
+  }
+  z-index: 800 !important;
+}
+.leaflet-container
+  .leaflet-marker-pane
+  img[src="assets/images/map/point_rojo.svg"] {
+  animation: blinker 2s linear infinite;
+  z-index: 9999 !important;
+}
+
+.custom-tooltip-map-name-city {
+  top: -5px;
+  left: 0;
+  position: absolute;
+  padding: 2px 8px;
+  transition: 0.2s linear;
+  background-color: $problemColor;
+  color: $black;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2.5px;
+  @include font-family("DIN Bold");
+  text-transform: uppercase;
+  padding-left: 15px;
+  white-space: nowrap;
+  transform: translate(-80%, -105%);
+  &.black {
+    top: -6px;
+    background-color: $black;
+    color: $white;
+    border: 1px solid $white;
+    &::before {
+      top: -1px;
+      border-left: 1px solid $white;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+    }
+  }
+  &::after {
+    content: "";
+  }
+  &::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    left: -10%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    -webkit-transform: skewX(20deg);
+    -moz-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+  }
+}
+
+.custom-detail-modal-marker-border {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 402;
+  height: 90px !important;
+  width: 90px !important;
+  margin-top: -45px !important;
+  margin-left: -45px !important;
+}
+.custom-tooltip-map-name-border {
+  top: 0 !important;
+  left: 0 !important;
+  position: absolute;
+  z-index: 402;
+  height: 125px !important;
+  width: 125px !important;
+  margin-top: -86px !important;
+  margin-left: -65px !important;
+  transition: 0.2s linear;
+}
+
+.custom-tooltip-map-name-border-dos {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 402;
+  height: 125px !important;
+  width: 125px !important;
+  margin-top: -86px !important;
+  margin-left: -65px !important;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s linear;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.call-action {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  button,
+  a {
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    @include font-family("DIN Medium");
+    padding: 10px 20px;
+    @include bg-linear-gradient(white);
+    color: $white;
+    transition: background-color 0.3s ease-out;
+    &:hover,
+    &.active {
+      background-color: $bgCAbutton;
+      cursor: pointer;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      &:hover {
+        background-color: unset;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.toggle-view {
+  position: absolute;
+  top: 140px;
+  z-index: 699;
+  left: 50px;
+  display: flex;
+  gap: 16px;
+  a {
+    text-decoration: none;
+    color: $primaryColor;
+    padding: 10px 20px;
+    @include font-family("DIN Medium");
+    font-size: 20px;
+    @include bg-linear-gradient($black);
+    transition: all .3s ease-in-out;
+    &.active, &:hover{      
+      @include bg-linear-gradient($white, #55f9e233);
+    }
+  }
+}
+
+.backdrop {
+  position: absolute;
+  z-index: 700;
+  background: $bgBackdrop;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .toggle-view {
+    left: calc(100% / 2 - 74px)  !important;
+    bottom: calc(0% + 88px) !important;
+    top: unset !important;
+  }
+
+  .call-action {
+    gap: 1rem !important;
+    button, a {
+      @include bg-linear-gradient($primaryColor);
+      color: $primaryColor !important;
+      letter-spacing: unset !important;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .toggle-view {
+    bottom: calc(0% + 75px) !important;
+  }
+}

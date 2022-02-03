@@ -1,0 +1,39 @@
+<svg width="58" height="58" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+ <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+ <title>Group 11 Copy 2</title>
+ <desc>Created with Sketch.</desc>
+ <defs>
+  <rect id="path-1" x="0" y="0" width="26" height="26" rx="13"/>
+  <filter x="-107.7%" y="-76.9%" width="315.4%" height="315.4%" filterUnits="objectBoundingBox" id="filter-2">
+   <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+  </filter>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <g id="Page-1_final" fill="none" fill-rule="evenodd" stroke="null">
+   <g id="1-Earth-2D-route-problem-02" stroke="null">
+    <g id="Group-33" stroke="null">
+     <g id="Group-30" stroke="null">
+      <g id="Group-11-Copy-2" transform="matrix(0 2.16965 -2.16965 0 102.631 -62.0432)" stroke="null">
+       <g transform="rotate(-90 28.9622 46.9368)" id="Rectangle-Copy-39" stroke="null">
+        <use fill="black" filter="url(#filter-2)" xlink:href="#path-1" y="46.93679" x="28.96217" id="svg_1" stroke="null"/>
+        <rect stroke-width="1.95" stroke-linejoin="square" fill="#000000" fill-rule="evenodd" x="29.93717" y="47.91179" width="24.05" height="24.05" rx="12.025" id="svg_2" stroke="#00CFCF"/>
+       </g>
+       <g id="Group-49" transform="rotate(-90 28.9622 46.9368) translate(5 8)" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.702" stroke="#00CFCF">
+        <polyline id="Stroke-1" points="30.068068001419306,51.99345016479492 30.068068001419306,53.66368103027344 30.664503548294306,53.66368103027344 30.664503548294306,55.32541275024414 31.854505989700556,55.32541275024414 " stroke="null"/>
+        <path d="m30.08537,48.55364l0,-1.61685l12.31533,0l1.19452,2.72713l1.26528,0.86037c0.19207,0.13085 0.38807,0.34819 0.38807,0.58013l0,4.25581l-1.47532,0" id="Stroke-2" stroke="null"/>
+        <path d="m34.59844,55.36905l6.43032,0" id="Stroke-4" stroke="null"/>
+        <path d="m42.40081,56.69712c0.75647,0 1.37199,-0.61552 1.37199,-1.37199c0,-0.75648 -0.61552,-1.37199 -1.37199,-1.37199c-0.75648,0 -1.37199,0.61551 -1.37199,1.37199c0,0.75647 0.61551,1.37199 1.37199,1.37199z" id="Stroke-6" stroke="null"/>
+        <path d="m33.22629,56.69712c0.75647,0 1.37199,-0.61552 1.37199,-1.37199c0,-0.75648 -0.61552,-1.37199 -1.37199,-1.37199c-0.75648,0 -1.37199,0.61551 -1.37199,1.37199c0,0.75647 0.61551,1.37199 1.37199,1.37199z" id="Stroke-8" stroke="null"/>
+        <path d="m31.15263,50.87024l-1.61123,0" id="Stroke-10" stroke="null"/>
+        <path d="m28.96217,49.75361l2.79059,0" id="Stroke-12" stroke="null"/>
+        <path d="m30.66449,53.66071l14.57577,0" id="Stroke-14" stroke="null"/>
+        <path d="m40.25421,46.93685l0,6.72403" id="Stroke-16" stroke="null"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

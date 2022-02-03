@@ -1,0 +1,59 @@
+@import "../../../../vars";
+
+article {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  article {
+    display: block !important;
+    background-color: $black;
+    position: absolute;
+    max-width: calc(100vw - 1rem);
+    min-height: 200px;
+    width: 100%;
+    z-index: 700;
+    img {
+      height: 15px;
+      width: 18px;
+    }
+    .cards {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+      overflow-x: scroll;
+      .card {
+        background-image: url("/assets/images/consola-primary.svg");
+        transform: scale(0.9);
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: $primaryColor;
+        display: flex;
+        flex-direction: column;
+        @include font-family("DIN Bold");
+        height: 142px;
+        letter-spacing: 1px;
+        max-width: 192px;
+        min-width: 192px;
+        overflow: hidden;
+        padding: 1.5rem 1.75rem;
+        opacity: 0.75;
+        &:hover {
+          opacity: 1;
+        }
+        &.problem {
+          background-image: url("/assets/images/consola-problem.svg");
+        }
+        span {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          min-height: 1.25rem;
+          &.id {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
