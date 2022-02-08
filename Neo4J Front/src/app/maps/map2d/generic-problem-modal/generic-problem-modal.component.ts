@@ -35,9 +35,9 @@ export class GenericProblemModalComponent implements OnInit {
               [-90, -180],
               [90, 180],
             ],
-            id: 'alberto-maps/ckue4uxz20w5f18k6fqaslvab',
+            id: 'xxxxx',
             accessToken:
-              'pk.eyJ1IjoiYWxiZXJ0by1tYXBzIiwiYSI6ImNrdWU0dG84dTFncXQyd2xtemVvYzhvN3UifQ.T_W3KWZ6irO5-aB18C_6sA',
+              'xxxxxxx',
           } as any
         ),
       ],

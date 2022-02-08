@@ -366,9 +366,9 @@ export class MapComponent implements OnInit {
               [-90, -180],
               [90, 180],
             ],
-            id: 'spike-maps/ckv9ajrkm1tqe14opltcatv2w',
+            id: 'xxxxx',
             accessToken:
-              'pk.eyJ1Ijoic3Bpa2UtbWFwcyIsImEiOiJja3Y5YWVzcWYxbmZqMzNvazIxMTVtZGNmIn0.ErqbTIynTwkIdrZFee14Tw',
+              'xxxxxxx',
           } as any
         ),
       ],

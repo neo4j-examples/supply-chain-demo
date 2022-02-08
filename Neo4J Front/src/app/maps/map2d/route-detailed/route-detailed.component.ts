@@ -40,9 +40,9 @@ export class RouteDetailedComponent implements OnInit {
               [-90, -180],
               [90, 180],
             ],
-            id: 'spike-maps/ckv9b2oad610x15nzukiks6ln',
+            id: 'xxxxx',
             accessToken:
-              'pk.eyJ1Ijoic3Bpa2UtbWFwcyIsImEiOiJja3Y5YWVzcWYxbmZqMzNvazIxMTVtZGNmIn0.ErqbTIynTwkIdrZFee14Tw',
+              'xxxxxxx',
           } as any
         ),
       ],
