@@ -13,7 +13,7 @@ Or:
 
 ## Introduction
 
-This document describes the technical characteristics of the Neo4J retail use case project - the Supply Chain Use Case Demo.
+This document describes the technical characteristics of the Neo4J retail use case project - the **Supply Chain Demo**.
 
 ## Neo4j Database Model
 
@@ -21,7 +21,19 @@ Implemented model:
 
 ![graph-model](Img/graph-model.png)
 
-Data size:
+### Start your free AuraDB instance
+
+Register or Login your AuraDB account here: <https://dev.neo4j.com/aura>. Neo4j AuraDB is Neo4j’s fully managed cloud service. The zero-admin, always-on graph database for cloud developers.
+
+We recommend to use AuraDB to learn the Supply Chain Demo.
+
+You need your connection string and login info to connect from the backend service.
+
+### Init Test Dataset:
+
+When your AuraDB instance is running. You can use Neo4j Browser to run the Cypher script to init the test dataset. The script file is located at `DBScripts/populateDB.txt`.
+
+Test data size:
 
 ![Picture-size](Img/Picture-size.png)
 
@@ -45,21 +57,9 @@ In addition, the following NuGets has been installed:
 
 - `Swashbuckle.AspNetCore`, this package allows developing the API documentation.
 
-Reference Swagger URL: http://apineo4jha-env.eba-aaavznqz.us-east-1.elasticbeanstalk.com/swagger/index.html
-
 ### How to use the API?
 
-Get this API running:
-
-- Neo4j Server 4. x - the easiest way is with Neo4j Desktop, just create a new 4. x version (any will work)
-
-- Populate database - Once you have (1) you need to populate the database with data, to do that:
-  - Start Neo4j (using a command like this: C:\neo4j-community-4.3.5> bin\neo4j console)
-  - Open the browser here.
-  - Login using your user and password.
-  - Go to file `Scripts/populateDB.txt` placed at `SpikeNeo4j` project, copy the content to the neo4j line command, and press play. 
-
-Now you're ready to use the API!
+To get the API running, you need to run your Neo4j AuraDB instance first. Then you're ready to use the API!
 
 ### Controllers
 
@@ -285,7 +285,7 @@ https://echarts.apache.org/
 
 ECharts: a powerful interactive charting and visualization library for browsers. We can see this library in the speedometer and the revolution counter in the incident mode of the truck.
 
-## AWS Setup
+## AWS Deployment Setup
 
 ### Frontend
 
