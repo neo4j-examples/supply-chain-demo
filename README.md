@@ -227,6 +227,8 @@ SpikeNeo4j is a console project which starts executing from the entry point publ
 
 ## Frontend
 
+[README](Neo4J%20Front/README.md)
+
 We have built this application using Angular 12. Angular is a complete framework that has all the artifacts and requirements to build a SPA (single page application).
 
 We use this framework to give robustness and provide an architecture to modern applications that set a standard in development and allow easy maintenance.
