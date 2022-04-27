@@ -19,11 +19,11 @@ This document describes the technical characteristics of the Neo4J retail use ca
 
 Implemented model: 
 
-![graph-model](README/graph-model.png)
+![graph-model](Img/graph-model.png)
 
 Data size:
 
-![Picture-size](README/Picture-size.png)
+![Picture-size](Img/Picture-size.png)
 
 ## Backend API
 
@@ -179,7 +179,7 @@ This method reads the neo4j connection parameters from the `appsettings.json` fi
 
 The following contains a description of the project structure.
 
- ![spikeneo4j-project](README/spikeneo4j-project.png) 
+ ![spikeneo4j-project](Img/spikeneo4j-project.png) 
 
 #### Dependencies
 
@@ -293,7 +293,7 @@ Amazon S3 static website
 
 AWS Elastic Beanstalk.
 
- ![Picture-aws](README/Picture-aws.png)
+ ![Picture-aws](Img/Picture-aws.png)
 
 Reference configurations: 
 
@@ -313,4 +313,4 @@ Reference configurations:
 
 ### Architecture
 
-![Picture1](README/Picture1.png)
+![Picture1](Img/Picture1.png)
