@@ -4,6 +4,10 @@ Neo4j Supply Chain Application Demo
 # Supply-Chain-Demo Overview Video
 [![Neo4j Supply Chain Application Demo](Img/Capture_Neo4j_Supply_Chain_Demo.PNG)](https://www.youtube.com/watch?v=m_r9ta5F4G0 "Neo4j Supply Chain Application Demo")
 
+# Explainer Article
+
+Here is a [more detailed article](https://neo4j.com/blog/demo-build-intelligent-supply-chain-app-neo4j/) that explains the Supply Chain application from a use-case perspective.
+
 # Technical Documentation
 Please Check Neo4j - Supply Chain Use Case - Technical Manual.docx
 
