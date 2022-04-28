@@ -47,6 +47,34 @@ The backend API built using .NET 5.0. The solution contains two projects:
 
 To connect to the Neo4j database, we have installed the NuGet `Neo4jClient` (community driver) package in the `SpikeNeo4j` project. The connection parameters are stored in the `appsettings.json` file. 
 
+```json
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "Neo4j": {  
+    "Host": "neo4j+s://xxxxx.databases.neo4j.io",
+    "User": "neo4j",
+    "Pass": "xxxxx"
+  },
+  "AppSettings": {
+    "Token": "xxxxx"
+  },
+  "Login": {
+    "Username": "xxx",
+    "Password": "xxx"
+  },
+  "ApikeyGoogleMaps": {
+    "ApiKey": "xxxxxxxxxxx"
+  }
+}
+```
+
 In addition, the following NuGets has been installed:
 
 - `Gmap.Net.Core`: connection to google maps API to get truck routes and geolocate addresses. The Google Maps API key is stored in the `appsettings.json` file.
@@ -63,7 +91,7 @@ To get the API running, you need to run your Neo4j AuraDB instance first. Then y
 
 ### Controllers
 
-There are two controllers implemented for this API. For more details about how to use their methods, you can have a look at the project swagger interface at /swagger/index.html.
+There are two controllers implemented for this API. For more details about how to use their methods, you can have a look at the project swagger interface at `/swagger/index.html`.
 
 #### `Neo4jClientController` (api/neo4j)
 
@@ -232,6 +260,20 @@ SpikeNeo4j is a console project which starts executing from the entry point publ
 We have built this application using Angular 12. Angular is a complete framework that has all the artifacts and requirements to build a SPA (single page application).
 
 We use this framework to give robustness and provide an architecture to modern applications that set a standard in development and allow easy maintenance.
+
+You need to update the Backend API endpoint URL in the file `src/environments/environment.ts`.
+
+```typescript
+export const environment = {
+  production: false,
+  urlApi:
+    'https://localhost:5001/api',
+};
+```
+
+Then you can run `ng serve` if you have angular cli installed globally.
+
+You can also run `npx ng serve` if your augular cli is just in this project.
 
 ### Modular Application
 
